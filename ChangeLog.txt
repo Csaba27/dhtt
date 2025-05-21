@@ -1,0 +1,55 @@
+(2024-05-13)
+* Tesztek dhtt
+* storage_url asset url támogatás
+* declare string_types=1 szigorú mód hozzáadva minden osztályhoz
+* seed-ek szétválasztása, automatikus admin felhasználó létrehozása (fake adatok DhttFakerSeeder)
+* eseményeknél regisztráció vége az mindig a Kedvezmény lejárata dátummal egyenlő
+* események aktív állapot változtató checkbox
+* AlpineJs tooltip direktíva
+* jelentkező űrlap részvételi díj szerkesztés megerősítés
+
+
+(2024-04-25)
+* Jelentkezők
+    - form (rajtszámgenerálás checkbox, idők input time tipusuak step 1, év combobox)
+    - enum státusz class, default = registered
+    - idők kitöltésénél több ellenőrzés
+    - létrehozásnál az esemény részvételi díja szerepel automatikusan
+    - tagság és diák változtatásnál figyelmeztetés felugrik a részvételi díj újraszámolására
+
+
+(2024-04-22)
+* Statisztika rész be nem érkezett résztvevők kezelése (beérkeztetés, feladás)
+* Sablonok az esemény leírásához, meghívóhoz és szabályzathoz illteve részvételi feltételekhez
+
+
+(2025-04-15)
+* Admin panel kiválasztott esemény #[Session] attributum segítségével való tárolás
+* esemény megjelenítés livewire komponensek (túrák, képek, eredménytábla)
+* beállítások menü a DHTT panelban
+* SettingManager service + cache + facade, setting function helper
+* stepper komponens showstep spin animáció és disabled
+* panel tab váltás optimalizálása (beállítások és támogatók esemény kiválasztásánál ignore nem tölt újra)
+* jelentkezőnél státusz idők beírása automatikusan
+
+
+(2025-04-06)
+* regisztráció (státuszok és esemény dátum figyelése, kor megerősítés 0-14 év között)
+* jelentkező szerkesztésnél teljes idő beírása
+* utolsó esemény megjelenítése
+* archívum
+* túra track fájl feltöltés (linkben tárolja a jelenlegit)
+
+
+(2025-04-01)
+* regisztráció livewire alapon (két komponens form és lista, regisztrálás utá újratölt)
+* főoldal számláló, útvonal kirajzolás (ellenőrzőpont, tooltip, kör követése útvonalon)
+* javascript fájlok átkerültek a resources-ba vite.config.js-ben külön hívhatjuk őket @vite, jodit, leaflet, drawRoute
+* statisztika: diagram
+* jelentkezők sorszám generálás létrehozás után (létrehozásnál esemény átadása button-nek)
+* jodit editor komponens kiegészítése
+* 404-es oldal fordítás
+* laracasts/flash használata session helyett erre külön komponens van
+* esemény kiválasztás megjegyzi ha nincs session-ben eltárolva legelső aktiv vagy utolsó nem aktiv
+* adminTw Site settings-be került egy opció a regisztrációs oldal és használatának kikapcsolására
+* seeder, factory finomítás

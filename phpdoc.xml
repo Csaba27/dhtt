@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdoc>
+    <title>Projekt Dokumentáció</title>
+
+    <parser>
+        <target>build/parser</target>
+    </parser>
+
+    <transformer>
+        <target>docs</target>
+    </transformer>
+
+    <files>
+        <directory>app</directory>
+        <directory>routes</directory>
+        <ignore>
+            vendor
+            storage
+            node_modules
+            bootstrap/cache
+        </ignore>
+    </files>
+</phpdoc>

@@ -1,0 +1,243 @@
+/**
+    Tailwind theme
+ */
+
+@theme {
+    --color-dhtt-green: #417630;
+}
+
+/**
+    H1
+ */
+
+.dhtt-h1 {
+    font-weight: 600;
+    color: var(--color-dhtt-green);
+    text-align: center;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+}
+
+/* Back to top button */
+
+.dhtt-back-to-top {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 6px 12px 9px 12px;
+    font-size: 16px;
+    border-radius: 2px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+}
+
+.dhtt-back-to-top:focus {
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    outline: none;
+}
+
+.dhtt-back-to-top:hover {
+    background: var(--color-dhtt-green);
+    color: #fff;
+}
+
+.dhttbreadcrumb {
+    display: block;
+    padding: 10px;
+    border-radius: 0;
+    background-color: var(--color-dhtt-green);
+    margin-top: 80px;
+    margin-bottom: 0;
+}
+
+.dhttbreadcrumb h1 {
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+
+#dhtt-hero {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    background: url('/public/img/dhtt/kakukkhegy0.jpg') fixed top center;
+    background-size: cover;
+    position: relative;
+}
+
+#dhtt-hero:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#dhtt-hero .hero-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+}
+
+#dhtt-hero h1 {
+    margin: 30px 0 10px 0;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 56px;
+    color: #fff;
+}
+
+#dhtt-hero h2 {
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 22px;
+}
+
+#dhtt-hero .btn-registration {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+#dhtt-hero .btn-registration:hover {
+    background: var(--color-dhtt-green);
+    border: 2px solid var(--color-dhtt-green);
+}
+
+/**
+    Section contact
+ */
+
+#dhtt-contact {
+    background-color: #eff8ed; /*d9ecd3*/
+}
+
+#dhtt-contact h3 {
+    font-weight: 400;
+    color: var(--color-dhtt-green);
+}
+
+#dhtt-contact h6 {
+    color: #4c5664;
+}
+
+#dhtt-contact .info i {
+    font-size: 32px;
+    color: var(--color-dhtt-green);
+}
+
+#dhtt-contact .info p {
+    padding: 0 0 10px 50px;
+    margin-bottom: 20px;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+/**
+    Footer
+ */
+
+#dhtt-footer {
+    background-color: var(--color-dhtt-green);
+}
+
+#dhtt-footer p {
+    margin-bottom: 0;
+}
+
+/**
+    Media queries
+ */
+
+@media (max-width: 768px) {
+
+    #dhtt-hero {
+        background: url('/public/img/dhtt/delhargita1-1280w.jpg') fixed top center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .dhtt-breadcrumb {
+        display: block;
+        padding: 10px;
+        border-radius: 0;
+        background-color: var(--color-dhtt-green);
+        margin-top: 90px;
+        margin-bottom: 0;
+    }
+
+    .dhtt-breadcrumb h1 {
+        font-size: 1.9rem;
+    }
+
+    .dhtt-back-to-top {
+        bottom: 15px;
+    }
+}
+
+.dark {
+    #dhtt-contact {
+        background: #273344;
+    }
+
+    #dhtt-contact h3, #dhtt-contact h6 {
+        color: inherit;
+    }
+}
+
+/**
+    Leaflet map waypoint style
+ */
+
+.waypoint-icon {
+    background-color: #fccc78;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    color: #29341d;
+    font-size: 12px;
+    text-align: center;
+    line-height: 15px;
+}
+
+.waypoint-tooltip-name {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
