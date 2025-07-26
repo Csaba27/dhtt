@@ -126,7 +126,7 @@
                                         </div>
                                         <div wire:loading.remove>
                                             <div class="text-center">
-                                                Biztos hogy törölni szeretnéd az alábbi eseményt:
+                                                Biztos, hogy törölni szeretnéd az alábbi eseményt?<br>
                                                 <b>{{ $event['name'] }}</b>
                                             </div>
                                         </div>

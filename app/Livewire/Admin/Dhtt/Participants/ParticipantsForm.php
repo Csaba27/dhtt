@@ -77,7 +77,7 @@ class ParticipantsForm extends Component
         ];
     }
 
-    public function boot(): void
+    public function extraValidate(): void
     {
         // Extra validálások
         $this->withValidator(function ($validator) {
@@ -124,7 +124,7 @@ class ParticipantsForm extends Component
                     $validator->errors()->add('startTime', 'Elindulási idő nem lehet későbbi az érkezési időnél!');
                 }
             });
-        });
+        })->validate();
     }
 
     public function mount(): void
@@ -161,6 +161,7 @@ class ParticipantsForm extends Component
     public function submit(): void
     {
         $this->validate();
+		$this->extraValidate();
 
         $participant = $this->participant ?? new Participant;
         $hike = Hike::find($this->hikeId);

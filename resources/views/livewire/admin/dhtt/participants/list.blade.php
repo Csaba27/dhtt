@@ -155,7 +155,7 @@
                                     </div>
                                     <div wire:loading.remove>
                                         <div class="text-center">
-                                            Biztos hogy törölni szeretnéd törölni az alábbi túrát:
+                                            Biztos, hogy törölni szeretnéd az alábbi jelentkezőt?<br>
                                             <b>{{ $participant['name'] }}</b>
                                         </div>
                                     </div>

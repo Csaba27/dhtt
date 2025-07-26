@@ -36,7 +36,7 @@
                         type="button"
                         class="btn-sm" variant="red"
                         wire:click="delete({{ $supporter->id }})"
-                        wire:confirm="Biztos hogy törölni szereténd?">
+                        wire:confirm="Biztos, hogy törölni szeretnéd ezt a támogatót?">
 
                         <i class="fas fa-circle-notch fa-spin"
                            wire:loading.inline

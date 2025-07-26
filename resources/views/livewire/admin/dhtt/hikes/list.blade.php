@@ -129,7 +129,7 @@
                                     </div>
                                     <div wire:loading.remove>
                                         <div class="text-center">
-                                            Biztos hogy törölni szeretnéd törölni az alábbi túrát:
+                                            Biztos, hogy törölni szeretnéd törölni az alábbi túrát?<br>
                                             <b>{{ $hike['name'] }}</b>
                                         </div>
                                     </div>

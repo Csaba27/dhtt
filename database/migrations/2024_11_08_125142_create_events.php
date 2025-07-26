@@ -32,7 +32,7 @@ return new class extends Migration
             $table->text('rules');
             $table->unsignedTinyInteger('status')->default(0);
             $table->boolean('active')->default(false);
-            $table->boolean('show')->default(false);
+            $table->boolean('show')->default(true);
             $table->timestamps();
             $table->softDeletes();
         });

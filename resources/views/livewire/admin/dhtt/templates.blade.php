@@ -22,7 +22,7 @@
                 </div>
 
                 <div class="mb-4">
-                    <x-form.select wire:model="type" name="type" label="Típus">
+                    <x-form.select wire:model="type" name="type" label="Típus" placeholder="Típus kiválasztása">
                         @foreach ($this->templateTypes() as $key => $value)
                             <x-form.select-option value="{{ $key }}">{{ $value }}</x-form.select-option>
                         @endforeach
